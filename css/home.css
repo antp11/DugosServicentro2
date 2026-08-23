@@ -259,6 +259,27 @@ a:hover {
     font-size: 18px;
 }
 
+@media (max-width: 767.98px) {
+    #banner .carousel {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    #banner .carousel-caption {
+        padding: 16px 14px;
+        border-radius: 16px;
+    }
+
+    #banner .carousel-caption h5 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    #banner .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
 /* ========== FIN Sección Banner: información principal y bienvenida ========== */
 
 
