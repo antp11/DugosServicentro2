@@ -12,6 +12,7 @@
     --bg-section-2: #FBEEE6;
     --bg-section-3: #F5EFDC;
     --bg-footer: #2B2420;
+    --dg: linear-gradient(90deg, red 0%, yellow 50%, green 100%);
 
     /* Texto */
     --text-body: #2B2420;
@@ -794,6 +795,16 @@ fin del banner de acerca de*/
     display: inline-block;
 }
 
+.tecnologias-grid .valor-item i {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.tecnologias-grid .valor-item h4 {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
 .acerca-cta {
     background-color: var(--bg-footer);
     color: var(--text-footer);
@@ -911,6 +922,28 @@ fin del banner de acerca de*/
     font-weight: 600;
 }
 
+.section-clima {
+    width: 100%;
+    background-color: var(--bg-section-1);
+    color: var(--bg-footer);
+    padding: 20px 16px;
+    text-align: center;
+}
+
+.clima-contenido {
+    position: relative;
+}
+
+.section-clima p {
+    color: var(--bg-footer);
+    font-weight: 600;
+}
+
+.clima-icono {
+    font-size: 1.8rem;
+    color: var(--color-naranja);
+}
+
 /* ========== FIN Página Ubicación ========== */
 
 
@@ -936,7 +969,7 @@ fin del banner de acerca de*/
 }
 
 .section-galeria {
-    background-color: var(--bg-section-2);
+    background-color: var(--bg-section-1);
 }
 
 .btn-filtro {

@@ -38,6 +38,20 @@ function cargarGaleria() {
 
 function renderizarGaleria(categoria) {
     const contenedor = document.getElementById('galeria-imagenes');
+    const videoInstalaciones = document.getElementById('video-instalaciones');
+    const esInstalaciones = categoria === 'taller';
+
+    videoInstalaciones.classList.toggle('d-none', !esInstalaciones);
+
+    if (!esInstalaciones) {
+        videoInstalaciones.querySelector('video').pause();
+    }
+
+    if (categoria === 'taller') {
+        contenedor.innerHTML = '';
+        return;
+    }
+
     const filtradas = categoria === 'todos'
         ? imagenesGaleria
         : imagenesGaleria.filter(imagen => imagen.categoria === categoria);

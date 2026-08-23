@@ -3,6 +3,50 @@ const DUGOS_LNG = -84.19019112393757;
 
 let map, directionsService, directionsRenderer;
 
+/* --- Clima del taller: consumo de API REST externo (Open-Meteo, sin API key) --- */
+const CODIGOS_CLIMA = {
+    0: { texto: 'Despejado', icono: 'bi-sun-fill', categoria: 'soleado' },
+    1: { texto: 'Mayormente despejado', icono: 'bi-cloud-sun-fill', categoria: 'soleado' },
+    2: { texto: 'Parcialmente nublado', icono: 'bi-cloud-sun-fill', categoria: 'nublado' },
+    3: { texto: 'Nublado', icono: 'bi-clouds-fill', categoria: 'nublado' },
+    45: { texto: 'Neblina', icono: 'bi-cloud-fog2-fill', categoria: 'nublado' },
+    48: { texto: 'Neblina', icono: 'bi-cloud-fog2-fill', categoria: 'nublado' },
+    51: { texto: 'Llovizna leve', icono: 'bi-cloud-drizzle-fill', categoria: 'lluvia' },
+    53: { texto: 'Llovizna', icono: 'bi-cloud-drizzle-fill', categoria: 'lluvia' },
+    55: { texto: 'Llovizna intensa', icono: 'bi-cloud-drizzle-fill', categoria: 'lluvia' },
+    61: { texto: 'Lluvia leve', icono: 'bi-cloud-rain-fill', categoria: 'lluvia' },
+    63: { texto: 'Lluvia', icono: 'bi-cloud-rain-fill', categoria: 'lluvia' },
+    65: { texto: 'Lluvia intensa', icono: 'bi-cloud-rain-heavy-fill', categoria: 'lluvia' },
+    80: { texto: 'Chubascos', icono: 'bi-cloud-rain-fill', categoria: 'lluvia' },
+    81: { texto: 'Chubascos', icono: 'bi-cloud-rain-fill', categoria: 'lluvia' },
+    82: { texto: 'Chubascos fuertes', icono: 'bi-cloud-rain-heavy-fill', categoria: 'lluvia' },
+    95: { texto: 'Tormenta eléctrica', icono: 'bi-cloud-lightning-rain-fill', categoria: 'tormenta' },
+    96: { texto: 'Tormenta con granizo', icono: 'bi-cloud-lightning-rain-fill', categoria: 'tormenta' },
+    99: { texto: 'Tormenta con granizo', icono: 'bi-cloud-lightning-rain-fill', categoria: 'tormenta' }
+};
+
+function cargarClima() {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${DUGOS_LAT}&longitude=${DUGOS_LNG}&current=temperature_2m,relative_humidity_2m,weather_code&timezone=auto`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(datos => {
+            const actual = datos.current;
+            const clima = CODIGOS_CLIMA[actual.weather_code] || { texto: 'N/D', icono: 'bi-cloud-fill', categoria: 'nublado' };
+
+            $('#climaTaller').html(`
+                <div class="clima-contenido d-flex align-items-center justify-content-center gap-2 flex-wrap">
+                    <i class="bi ${clima.icono} clima-icono"></i>
+                    <p class="mb-0">${Math.round(actual.temperature_2m)}°C — ${clima.texto} · Humedad ${actual.relative_humidity_2m}%</p>
+                </div>
+            `);
+        })
+        .catch(error => {
+            $('#climaTaller').html('<p class="mb-0 text-danger">No se pudo cargar el clima en este momento.</p>');
+            console.error('Error cargando el clima (Open-Meteo):', error);
+        });
+}
+
 function initMapa() {
     const dugosLocation = { lat: DUGOS_LAT, lng: DUGOS_LNG };
 
@@ -87,3 +131,5 @@ function errorUbicacion(error) {
 
     $('#ubicacion-estado').text(mensaje).addClass('text-danger');
 }
+
+cargarClima();

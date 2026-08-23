@@ -1,10 +1,13 @@
 [
-    { "id": 1, "src": "img/IMG_3168.JPG.jpeg", "alt": "Trabajo realizado en el taller", "categoria": "trabajos" },
-    { "id": 2, "src": "img/IMG_3167.JPG.jpeg", "alt": "Trabajo realizado en el taller", "categoria": "trabajos" },
-    { "id": 3, "src": "img/IMG_3160.JPG.jpeg", "alt": "Trabajo realizado en el taller", "categoria": "trabajos" },
-    { "id": 4, "src": "img/IMG_3166.JPG.jpeg", "alt": "Trabajo realizado en el taller", "categoria": "trabajos" },
-    { "id": 5, "src": "img/IMG_3173.JPG.jpeg", "alt": "Trabajo realizado en el taller", "categoria": "trabajos" },
-    { "id": 6, "src": "img/imgBanner1.jpg", "alt": "Instalaciones de Dugo's Servicentro", "categoria": "taller" },
-    { "id": 7, "src": "img/imgBanner2.jpg", "alt": "Instalaciones de Dugo's Servicentro", "categoria": "taller" },
-    { "id": 8, "src": "img/imgBanner3.jpg", "alt": "Instalaciones de Dugo's Servicentro", "categoria": "taller" }
+    { "id": 1, "src": "img/dugScanner.jpeg", "alt": "Diagnóstico con escáner automotriz", "categoria": "trabajos" },
+    { "id": 2, "src": "img/DugosAceite.jpg", "alt": "Cambio de aceite en el taller", "categoria": "trabajos" },
+    { "id": 3, "src": "img/DugosCamion.jpeg", "alt": "Trabajo realizado en camión", "categoria": "trabajos" },
+    { "id": 4, "src": "img/DugosFiltro.jpg", "alt": "Cambio de filtro", "categoria": "trabajos" },
+    { "id": 5, "src": "img/DugosFreno2.jpg", "alt": "Revisión de frenos", "categoria": "trabajos" },
+    { "id": 6, "src": "img/DugosFrenos.jpg", "alt": "Mantenimiento de frenos", "categoria": "trabajos" },
+    { "id": 7, "src": "img/dugosLlantas.jpg", "alt": "Cambio de llantas", "categoria": "trabajos" },
+    { "id": 8, "src": "img/DugosLlantas2.jpg", "alt": "Servicio de llantas", "categoria": "trabajos" },
+    { "id": 9, "src": "img/DugosLLantas3.jpg", "alt": "Revisión de llantas", "categoria": "trabajos" },
+    { "id": 10, "src": "img/DugosMoto.jpg", "alt": "Trabajo realizado en motocicleta", "categoria": "trabajos" },
+    { "id": 11, "src": "img/DugosTramado.jpeg", "alt": "Trabajo de tramado", "categoria": "trabajos" }
 ]
