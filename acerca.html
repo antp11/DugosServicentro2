@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de - DUGO'S SERVICENTRO #2</title>
+    <!-- Google Font: Baloo 2 (tipografía del logo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+
+    <!--CSS BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- INICIO Encabezado principal y Barra de Navegación -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid justify-content-lg-between">
+            <div class="d-flex position-relative justify-content-center justify-content-lg-start w-100 w-lg-auto">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="img/logoDugos.jpg" alt="Dugo's Servicentro" height="40">
+                    DUGO'S SERVICENTRO #2
+                </a>
+                <button class="navbar-toggler position-absolute top-50 end-0 translate-middle-y" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                    aria-expanded="false" aria-label="Mostrar menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center text-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="acerca.html">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="autor.html">Autor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- INICIO Hero: Acerca de -->
+        <section class="acerca-hero">
+            <img src="img/dugosAcercade.jpeg" class="acerca-hero-img" alt="Taller de Dugo's Servicentro">
+            <div class="acerca-hero-overlay">
+                <h1>Acerca de Nosotros</h1>
+                <p>Más de 20 años cuidando el motor de tu vehículo</p>
+            </div>
+        </section>
+        <!-- FIN Hero: Acerca de -->
+
+        <!-- INICIO Nuestra Historia -->
+        <section class="acerca-historia py-5">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-6">
+                        <div class="video-historia-wrap">
+                            <video id="videoHistoria" class="img-fluid rounded-4" autoplay muted loop playsinline
+                                poster="img/dugosAcercade.jpeg">
+                                <source src="img/acercaDugos2-comprimido.mp4" type="video/mp4">
+                            </video>
+                            <button id="btnSonidoHistoria" class="btn-sonido-overlay" aria-label="Activar sonido">
+                                <i class="bi bi-volume-mute-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  ">
+                        <h2>Nuestra Historia</h2>
+                        <p>Dugo's Servicentro nació hace más de 20 años con un objetivo simple: brindar un servicio
+                            honesto y de calidad para el mantenimiento de tu vehículo. Desde nuestros inicios como un
+                            pequeño taller familiar, hemos crecido gracias a la confianza de nuestros clientes,
+                            manteniendo siempre el mismo compromiso con la excelencia.</p>
+                        <p>Hoy contamos con personal capacitado, equipo moderno y una amplia variedad de servicios
+                            para que tu carro reciba el cuidado que se merece.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN Nuestra Historia -->
+
+        <!-- INICIO Misión y Visión -->
+        <section class="section-mision-vision py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card-mision h-100">
+
+                            <i class="bi bi-bullseye"></i>
+                            <h3>Misión</h3>
+                            <p>Ofrecer servicios de mantenimiento automotriz confiables y de calidad, cuidando cada
+                                detalle para prolongar la vida útil de tu vehículo y tu tranquilidad al conducir.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-mision card-vision h-100">
+                            <i class="bi bi-eye"></i>
+                            <h3>Visión</h3>
+                            <p>Ser el servicentro de referencia en la zona, reconocido por la calidad de nuestro
+                                trabajo, la honestidad de nuestro servicio y la satisfacción de nuestros clientes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN Misión y Visión -->
+
+        <!-- INICIO Nuestros Valores -->
+        <section class="section-valores py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Nuestros Valores</h2>
+                <div class="row g-4 text-center">
+                    <div class="col-6 col-md-3">
+                        <div class="valor-item">
+                            <i class="bi bi-award"></i>
+                            <h4>Calidad</h4>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="valor-item">
+                            <i class="bi bi-people"></i>
+                            <h4>Compromiso</h4>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="valor-item">
+                            <i class="bi bi-clock-history"></i>
+                            <h4>Puntualidad</h4>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="valor-item">
+                            <i class="bi bi-shield-check"></i>
+                            <h4>Confianza</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN Nuestros Valores -->
+
+        <!-- INICIO CTA -->
+        <section class="acerca-cta text-center py-5">
+            <div class="container">
+                <h2>¿Listo para cuidar tu vehículo?</h2>
+                <p>Visítanos o contáctanos y con gusto te atenderemos.</p>
+                <a href="contacto.html" class="btn btn-lg">Contáctanos</a>
+            </div>
+        </section>
+        <!-- FIN CTA -->
+    </main>
+
+    <!-- INICIO footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>DUGO'S SERVICENTRO</h3>
+                    <p><i class="bi bi-plus-lg"></i> de 20 años de experiencia cuidando tu
+                        vehículo.</p>
+
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="ubicacion.html">Ubicación</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <p><strong>Teléfono:</strong> +506 4711-0585</p>
+                    <p><strong>Email:</strong> dugos@gmail.com</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Redes sociales</h3>
+                    <div class="redes-sociales">
+                        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><i
+                                class="bi bi-tiktok"></i></a>
+                        <a href="https://wa.me/50663213838" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+                                class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center py-1">
+            &copy; <span id="anioActual"></span> DUGO'S SERVICENTRO. Todos los derechos reservados.
+        </div>
+    </footer>
+    <!-- FIN footer -->
+    <a href="https://wa.me/50663213838" target="_blank" rel="noopener" class="whatsapp-flotante"
+        aria-label="Escribir por WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+
+    <!--JS boostrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="js/principal.js"></script>
+
+</body>
+
+</html>

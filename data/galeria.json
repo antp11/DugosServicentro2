@@ -1,0 +1,10 @@
+[
+    { "id": 1, "src": "img/IMG_3168.JPG.jpeg", "alt": "Trabajo realizado en el taller", "categoria": "trabajos" },
+    { "id": 2, "src": "img/IMG_3167.JPG.jpeg", "alt": "Trabajo realizado en el taller", "categoria": "trabajos" },
+    { "id": 3, "src": "img/IMG_3160.JPG.jpeg", "alt": "Trabajo realizado en el taller", "categoria": "trabajos" },
+    { "id": 4, "src": "img/IMG_3166.JPG.jpeg", "alt": "Trabajo realizado en el taller", "categoria": "trabajos" },
+    { "id": 5, "src": "img/IMG_3173.JPG.jpeg", "alt": "Trabajo realizado en el taller", "categoria": "trabajos" },
+    { "id": 6, "src": "img/imgBanner1.jpg", "alt": "Instalaciones de Dugo's Servicentro", "categoria": "taller" },
+    { "id": 7, "src": "img/imgBanner2.jpg", "alt": "Instalaciones de Dugo's Servicentro", "categoria": "taller" },
+    { "id": 8, "src": "img/imgBanner3.jpg", "alt": "Instalaciones de Dugo's Servicentro", "categoria": "taller" }
+]

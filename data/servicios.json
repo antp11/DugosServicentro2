@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cambio de aceite y filtro",
+        "descripcion": "Cambio de aceite sintético o mineral y filtro, según la recomendación del fabricante de su vehículo.",
+        "icono": "bi-droplet-fill"
+    },
+    {
+        "id": 2,
+        "nombre": "Frenos",
+        "descripcion": "Revisión y cambio de pastillas, discos y líquido de frenos para una frenada segura.",
+        "icono": "bi-disc-fill"
+    },
+    {
+        "id": 3,
+        "nombre": "Alineación y balanceo",
+        "descripcion": "Alineación de dirección y balanceo de llantas para un desgaste uniforme y mejor manejo.",
+        "icono": "bi-arrows-angle-contract"
+    },
+    {
+        "id": 4,
+        "nombre": "Batería y sistema eléctrico",
+        "descripcion": "Diagnóstico, carga y cambio de batería, revisión de luces y sistema eléctrico del vehículo.",
+        "icono": "bi-lightning-charge-fill"
+    },
+    {
+        "id": 5,
+        "nombre": "Filtros de aire y combustible",
+        "descripcion": "Cambio de filtros de aire y combustible para optimizar el rendimiento del motor.",
+        "icono": "bi-fan"
+    },
+    {
+        "id": 6,
+        "nombre": "Diagnóstico general",
+        "descripcion": "Revisión completa del vehículo para detectar fallas antes de que se conviertan en un problema mayor.",
+        "icono": "bi-clipboard2-check-fill"
+    }
+]
