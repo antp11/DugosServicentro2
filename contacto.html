@@ -89,27 +89,65 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <form class="form-contacto" action="#" method="post">
+                        <form class="form-contacto" id="appContacto">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label for="nombre" class="form-label">Nombre completo</label>
-                                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                    <input type="text" class="form-control" id="nombre" v-model="form.nombre" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="email" class="form-label">Correo electrónico</label>
-                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <input type="email" class="form-control" id="email" v-model="form.email" required>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-md-6">
                                     <label for="telefono" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="telefono" name="telefono">
+                                    <input type="tel" class="form-control" id="telefono" v-model="form.telefono">
                                 </div>
+                                <div class="col-md-6">
+                                    <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                                    <input type="date" class="form-control" id="fechaNacimiento" v-model="form.fechaNacimiento" required>
+                                </div>
+                                <input type="hidden" id="edad" :value="edad">
+
+                                <div class="col-md-6">
+                                    <label for="rangoIngreso" class="form-label">Rango de ingreso mensual</label>
+                                    <select class="form-select" id="rangoIngreso" v-model="form.rangoIngreso" required>
+                                        <option value="" disabled>Seleccione una opción</option>
+                                        <option value="Menos de 300.000">Menos de &#8353;300.000</option>
+                                        <option value="300.000 - 600.000">&#8353;300.000 - &#8353;600.000</option>
+                                        <option value="600.000 - 1.000.000">&#8353;600.000 - &#8353;1.000.000</option>
+                                        <option value="Mas de 1.000.000">Más de &#8353;1.000.000</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label d-block">Género</label>
+                                    <div class="form-check form-check-inline" v-for="opcion in opcionesGenero" :key="opcion">
+                                        <input class="form-check-input" type="radio" :id="'genero' + opcion" name="genero"
+                                            :value="opcion" v-model="form.genero" required>
+                                        <label class="form-check-label" :for="'genero' + opcion">{{ opcion }}</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label d-block">Grado académico</label>
+                                    <div class="form-check form-check-inline" v-for="opcion in opcionesGrado" :key="opcion">
+                                        <input class="form-check-input" type="checkbox" :id="'grado' + opcion"
+                                            :value="opcion" v-model="form.gradoAcademico">
+                                        <label class="form-check-label" :for="'grado' + opcion">{{ opcion }}</label>
+                                    </div>
+                                </div>
+
                                 <div class="col-12">
                                     <label for="mensaje" class="form-label">Mensaje</label>
-                                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5"
-                                        required></textarea>
+                                    <textarea class="form-control" id="mensaje" rows="5"
+                                        v-model="form.mensaje" required></textarea>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button type="submit" class="btn">Enviar mensaje</button>
+                                    <button type="submit" class="btn" :disabled="enviando" @click.prevent="enviarFormulario">
+                                        {{ enviando ? 'Enviando...' : 'Enviar mensaje' }}
+                                    </button>
+                                    <p class="mt-3 mb-0" :class="claseEstado">{{ mensajeEstado }}</p>
                                 </div>
                             </div>
                         </form>
@@ -174,6 +212,11 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="js/principal.js"></script>
+
+    <!--JS Contacto-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="js/contacto.js"></script>
 
 </body>
 
