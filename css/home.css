@@ -140,10 +140,6 @@ a:hover {
     color: var(--color-coral);
 }
 
-.navbar-nav .nav-link.show {
-    color: var(--color-coral);
-}
-
 .navbar-nav .nav-link.active {
     color: #fff;
 }
@@ -172,26 +168,6 @@ a:hover {
 
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.6);
-}
-
-.dropdown-menu {
-    background-color: #3d332c;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    padding: 0.4rem;
-}
-
-.dropdown-item {
-    color: var(--bg-section-3);
-    border-radius: 6px;
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus-visible {
-    background-color: var(--bg-section-3);
-    color: var(--bg-footer);
 }
 
 @media (min-width: 992px) {
@@ -779,13 +755,6 @@ fin del banner de acerca de*/
     display: inline-block;
 }
 
-.card-vision:hover {
-    box-shadow: 0 6px 20px var(--bg-footer);
-    transform: translateY(-25px);
-}
-
-
-
 .section-valores {
     background-color: var(--bg-section-1);
 }
@@ -892,11 +861,6 @@ fin del banner de acerca de*/
 .form-contacto .form-control:focus {
     border-color: var(--color-naranja);
     box-shadow: 0 0 0 0.2rem rgba(227, 168, 104, 0.35);
-}
-
-.contacto-mapa iframe {
-    display: block;
-    box-shadow: 0 -4px 10px var(--bg-footer);
 }
 
 /* ========== FIN Página Contacto ========== */
