@@ -602,6 +602,7 @@ a:hover {
 
 
 .footer-column p {
+    color: var(--text-footer);
     font-size: 13px;
     line-height: 1.8;
     margin-bottom: 3px;
@@ -646,6 +647,7 @@ a:hover {
 .footer-bottom {
     font-size: 0.85rem;
     background-color: #aaa;
+    color: var(--text-body);
     box-shadow: 0 -5px 5px #aaa;
 
 }
